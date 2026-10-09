@@ -1,0 +1,11 @@
+{{- if .Site.Data.projects.projects }}
+<section id="featured-work" class="featured-section" style="margin-top: 3.5rem;">
+  <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem; color: var(--primary);">Featured Work</h2>
+  {{- range .Site.Data.projects.projects }}
+    {{- if .featured }}
+      {{- partial "project-card.html" . }}
+    {{- end }}
+  {{- end }}
+</section>
+{{- end }}
+

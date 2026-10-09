@@ -60,13 +60,13 @@
 
 ### Implementation for User Story 2
 
-- [ ] T017 [P] [US2] Create structured project card data in `data/projects.yaml` defining Social Media Studio (stack: Elixir, Oban, PostgreSQL, Docker, Telegram Bot API; outcome; architectural highlights: PostgreSQL partial unique index & Oban HTTP 429 snooze; metrics: 100% duplicate suppression)
-- [ ] T018 [US2] Implement structured project card partial component in `layouts/partials/project-card.html` rendering Title, Timeline, Badges, 1-Sentence Outcome, Architectural Highlights, and Action Links
-- [ ] T019 [US2] Add Featured Work section to homepage in `layouts/index.html` iterating over `data/projects.yaml`
-- [ ] T020 [P] [US2] Create in-depth case study markdown article in `content/projects/social-media-studio.md` detailing architecture, ExUnit transcripts, test matrices, and trade-offs
-- [ ] T021 [P] [US2] Create engineering log article in `content/posts/enforcing-idempotent-delivery.md` covering distributed queues and partial unique indexes
-- [ ] T022 [P] [US2] Create engineering log article in `content/posts/domain-driven-elixir-architectures.md` covering domain boundaries and resilience
-- [ ] T023 [US2] Add Engineering Logs section to homepage in `layouts/index.html` displaying recent engineering logs
+- [x] T017 [P] [US2] Create structured project card data in `data/projects.yaml` defining Social Media Studio (stack: Elixir, Oban, PostgreSQL, Docker, Telegram Bot API; outcome; architectural highlights: PostgreSQL partial unique index & Oban HTTP 429 snooze; metrics: 100% duplicate suppression)
+- [x] T018 [US2] Implement structured project card partial component in `layouts/partials/project-card.html` rendering Title, Timeline, Badges, 1-Sentence Outcome, Architectural Highlights, and Action Links
+- [x] T019 [US2] Add Featured Work section to homepage in `layouts/index.html` iterating over `data/projects.yaml`
+- [x] T020 [P] [US2] Create in-depth case study markdown article in `content/projects/social-media-studio.md` detailing architecture, ExUnit transcripts, test matrices, and trade-offs
+- [x] T021 [P] [US2] Create engineering log article in `content/posts/enforcing-idempotent-delivery.md` covering distributed queues and partial unique indexes
+- [x] T022 [P] [US2] Create engineering log article in `content/posts/domain-driven-elixir-architectures.md` covering domain boundaries and resilience
+- [x] T023 [US2] Add Engineering Logs section to homepage in `layouts/index.html` displaying recent engineering logs
 
 **Checkpoint**: User Stories 1 and 2 are fully integrated; technical screeners can inspect deep architectural proof and case studies.
 
@@ -80,12 +80,12 @@
 
 ### Implementation for User Story 3
 
-- [ ] T024 [US3] Implement accessible contact form markup in `layouts/partials/contact-form.html` including Name, Email, Message, and hidden botcheck honeypot field per `specs/001-portfolio-showcase/contracts/contact-api-contract.md`
-- [ ] T025 [US3] Enforce mobile input sizing and button tap ergonomics in `assets/css/extended/custom.css` (minimum 16px font size on inputs, 44x44px button dimensions, focus states)
-- [ ] T026 [US3] Implement client-side asynchronous submission script in `layouts/partials/contact-form.html` posting JSON payload to `https://api.web3forms.com/submit`
-- [ ] T027 [US3] Add real-time UI status messages in `layouts/partials/contact-form.html` (instant green success banner on HTTP 200, error banner on failure)
-- [ ] T028 [US3] Implement progressive enhancement fallback in `layouts/partials/contact-form.html` with native `<form action="https://api.web3forms.com/submit" method="POST" target="_top">` and a persistent, styled `mailto:contact@saminyasir.dev` link rendered directly below the submit button
-- [ ] T029 [US3] Mount contact form and FlyRank credentials partial into homepage in `layouts/index.html`
+- [x] T024 [US3] Implement accessible contact form markup in `layouts/partials/contact-form.html` including Name, Email, Message, and hidden botcheck honeypot field per `specs/001-portfolio-showcase/contracts/contact-api-contract.md`
+- [x] T025 [US3] Enforce mobile input sizing and button tap ergonomics in `assets/css/extended/custom.css` (minimum 16px font size on inputs, 44x44px button dimensions, focus states)
+- [x] T026 [US3] Implement client-side asynchronous submission script in `layouts/partials/contact-form.html` posting JSON payload to `https://api.web3forms.com/submit`
+- [x] T027 [US3] Add real-time UI status messages in `layouts/partials/contact-form.html` (instant green success banner on HTTP 200, error banner on failure)
+- [x] T028 [US3] Implement progressive enhancement fallback in `layouts/partials/contact-form.html` with native `<form action="https://api.web3forms.com/submit" method="POST" target="_top">` and a persistent, styled `mailto:contact@saminyasir.dev` link rendered directly below the submit button
+- [x] T029 [US3] Mount contact form and FlyRank credentials partial into homepage in `layouts/index.html`
 
 **Checkpoint**: User Stories 1, 2, and 3 are complete. Complete end-to-end portfolio core functionality is operational.
 

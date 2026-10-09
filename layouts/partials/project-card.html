@@ -1,0 +1,55 @@
+<article class="project-card">
+  <div class="project-card-header">
+    <h3 class="project-title">{{ .title }}</h3>
+    <span class="project-timeline">{{ .timeline }}</span>
+  </div>
+
+  {{- with .stack }}
+  <div class="project-badges">
+    {{- range . }}
+    <span class="project-badge">{{ . }}</span>
+    {{- end }}
+  </div>
+  {{- end }}
+
+  <div class="project-outcome">
+    <p><strong>Outcome:</strong> {{ .outcome }}</p>
+  </div>
+
+  {{- with .highlights }}
+  <ul class="project-highlights">
+    {{- range . }}
+    <li><strong>{{ .title }}:</strong> {{ .description }}</li>
+    {{- end }}
+  </ul>
+  {{- end }}
+
+  {{- with .metrics }}
+  <div class="project-metrics" style="margin-bottom: 1.25rem;">
+    {{- range . }}
+    <div style="font-size: 0.875rem; color: var(--primary); margin-bottom: 0.25rem;">
+      <span style="color: #38bdf8; margin-right: 0.5rem;">&rarr;</span>{{ . }}
+    </div>
+    {{- end }}
+  </div>
+  {{- end }}
+
+  <div class="project-actions">
+    {{- with .links.case_study }}
+    <a class="button action-link" href="{{ . | relURL }}" title="Read Case Study">
+      <span class="button-inner">Read Deep Dive &rarr;</span>
+    </a>
+    {{- end }}
+    {{- with .links.github }}
+    <a class="button action-link" href="{{ . }}" target="_blank" rel="noopener noreferrer" title="View GitHub Repository">
+      <span class="button-inner">GitHub Repo</span>
+    </a>
+    {{- end }}
+    {{- with .links.demo_video }}
+    <a class="button action-link" href="{{ . }}" target="_blank" rel="noopener noreferrer" title="Watch Demo Video">
+      <span class="button-inner">Demo Video</span>
+    </a>
+    {{- end }}
+  </div>
+</article>
+
