@@ -112,11 +112,11 @@
 
 **Purpose**: End-to-end verification, quality audit, and deployment readiness.
 
-- [ ] T034 Run layout validation against `specs/001-portfolio-showcase/quickstart.md` (check reading measure constraint, 44x44px tap targets, 16px input font size)
-- [ ] T035 Perform code block overflow test on mobile viewports ensuring `overflow-x: auto` functions properly without horizontal page blowout
-- [ ] T036 Audit site content against anti-pattern gates in `constitution.md` (verify 0 animated skill percentage bars, 0 broken links, 0 tutorial clones)
-- [ ] T037 Validate social card preview metadata and favicon loading using browser inspect tools and Open Graph verification
-- [ ] T038 Verify static build generation and validate output assets
+- [x] T034 Run layout validation against `specs/001-portfolio-showcase/quickstart.md` (check reading measure constraint, 44x44px tap targets, 16px input font size)
+- [x] T035 Perform code block overflow test on mobile viewports ensuring `overflow-x: auto` functions properly without horizontal page blowout
+- [x] T036 Audit site content against anti-pattern gates in `constitution.md` (verify 0 animated skill percentage bars, 0 broken links, 0 tutorial clones)
+- [x] T037 Validate social card preview metadata and favicon loading using browser inspect tools and Open Graph verification
+- [x] T038 Verify static build generation and validate output assets
 
 ---
 
