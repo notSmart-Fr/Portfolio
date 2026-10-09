@@ -99,10 +99,10 @@
 
 ### Implementation for User Story 4
 
-- [ ] T030 [P] [US4] Create high-contrast Open Graph preview card image at `static/images/og-card.png` (1200x630px displaying Samin Yasir, Backend & Systems Engineer, and core domain)
-- [ ] T031 [P] [US4] Create multi-resolution favicon suite in `static/favicon.svg` (modern vector tab icon), `static/favicon.ico` (multi-size 16x16/32x32), and `static/apple-touch-icon.png` (180x180 iOS shortcut)
-- [ ] T032 [US4] Create custom head extension partial in `layouts/partials/extend_head.html` injecting Open Graph tags (`og:title`, `og:description`, `og:image`, `og:url`), Twitter cards (`twitter:card="summary_large_image"`, `twitter:image`), and favicon link elements
-- [ ] T033 [US4] Create custom footer extension partial in `layouts/partials/extend_footer.html` injecting Cloudflare Web Analytics cookieless beacon script (`https://static.cloudflareinsights.com/beacon.min.js`) conditionally using `params.cloudflareAnalytics.token` with `defer` attribute
+- [x] T030 [P] [US4] Create high-contrast Open Graph preview card image at `static/images/og-card.png` (1200x630px displaying Samin Yasir, Backend & Systems Engineer, and core domain)
+- [x] T031 [P] [US4] Create multi-resolution favicon suite in `static/favicon.svg` (modern vector tab icon), `static/favicon.ico` (multi-size 16x16/32x32), and `static/apple-touch-icon.png` (180x180 iOS shortcut)
+- [x] T032 [US4] Create custom head extension partial in `layouts/partials/extend_head.html` injecting Open Graph tags (`og:title`, `og:description`, `og:image`, `og:url`), Twitter cards (`twitter:card="summary_large_image"`, `twitter:image`), and favicon link elements
+- [x] T033 [US4] Create custom footer extension partial in `layouts/partials/extend_footer.html` injecting Cloudflare Web Analytics cookieless beacon script (`https://static.cloudflareinsights.com/beacon.min.js`) conditionally using `params.cloudflareAnalytics.token` with `defer` attribute
 
 **Checkpoint**: User Story 4 complete. Rich social sharing unfurls and visitor telemetry are active without privacy/performance overhead.
 

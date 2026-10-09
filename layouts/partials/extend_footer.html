@@ -1,0 +1,14 @@
+{{/* ========================================================================
+     Custom Footer Extensions: Cookieless Cloudflare Web Analytics Beacon
+     Compliant with spec.md User Story 4 & FR-015
+     ======================================================================== */}}
+
+{{- if and site.Params.cloudflareAnalytics site.Params.cloudflareAnalytics.token }}
+<!-- Cloudflare Web Analytics (Cookieless Beacon) -->
+<script defer 
+        src="https://static.cloudflareinsights.com/beacon.min.js" 
+        data-cf-beacon='{"token": "{{ site.Params.cloudflareAnalytics.token }}"}'>
+</script>
+<!-- End Cloudflare Web Analytics -->
+{{- end }}
+
