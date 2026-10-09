@@ -1,0 +1,93 @@
+baseURL: "https://saminyasir.dev/"
+languageCode: "en-us"
+title: "Samin Yasir | Backend & Systems Engineer"
+theme: "PaperMod"
+
+pagination:
+  pagerSize: 10
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: false
+  minifyOutput: true
+
+params:
+  env: "production"
+  title: "Samin Yasir"
+  description: "Backend & Systems Engineer specializing in resilient concurrent pipelines, adapter seams, and distributed event systems."
+  keywords: ["Backend Engineer", "Systems Engineer", "Elixir", "Distributed Systems", "Concurrency", "PostgreSQL", "Oban"]
+  author: "Samin Yasir"
+
+  # Theme Aesthetics
+  defaultTheme: "auto"
+  disableThemeToggle: false
+  ShowShareButtons: false
+  ShowReadingTime: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+
+  # Profile Mode (Above-the-fold scan for homepage)
+  profileMode:
+    enabled: true
+    title: "Samin Yasir"
+    subtitle: "Backend & Systems Engineer\nBuilding resilient concurrent pipelines, adapter seams, and distributed event systems."
+    imageUrl: ""
+    imageTitle: "Samin Yasir"
+    buttons:
+      - name: "Featured Work"
+        url: "#featured-work"
+      - name: "Engineering Logs"
+        url: "#engineering-logs"
+      - name: "Contact"
+        url: "#contact"
+
+  # Social Icons
+  socialIcons:
+    - name: "github"
+      title: "GitHub"
+      url: "https://github.com/saminyasir"
+    - name: "linkedin"
+      title: "LinkedIn"
+      url: "https://linkedin.com/in/saminyasir"
+    - name: "email"
+      title: "Email"
+      url: "mailto:contact@saminyasir.dev"
+
+  # Social Meta & Open Graph Cards
+  socialMeta:
+    image: "/images/og-card.png"
+    imageAlt: "Samin Yasir - Backend & Systems Engineer"
+    twitterCard: "summary_large_image"
+    twitterCreator: "@saminyasir"
+
+  # Telemetry (Cloudflare Web Analytics Cookieless Beacon)
+  cloudflareAnalytics:
+    token: "" # Set via Cloudflare dashboard or specify token here
+
+  # Contact Form Integration (Web3Forms)
+  web3forms:
+    access_key: "YOUR_WEB3FORMS_ACCESS_KEY"
+
+menu:
+  main:
+    - identifier: featured-work
+      name: "Featured Work"
+      url: "/#featured-work"
+      weight: 10
+    - identifier: posts
+      name: "Engineering Logs"
+      url: "/posts/"
+      weight: 20
+    - identifier: contact
+      name: "Contact"
+      url: "/#contact"
+      weight: 30
+

@@ -23,13 +23,13 @@
 
 **Purpose**: Global site configuration, theme parameters, core styling constraints, and credential data.
 
-- [ ] T006 Configure core Hugo site settings, title, baseURL (`https://saminyasir.dev/`), theme (`PaperMod`), and profileMode in `config/_default/hugo.yaml` per `specs/001-portfolio-showcase/data-model.md`
-- [ ] T007 Configure social links (GitHub, LinkedIn, Email mailto), social metadata parameters (`params.socialMeta`), Cloudflare Web Analytics token (`params.cloudflareAnalytics.token`), and Web3Forms access key in `config/_default/hugo.yaml`
-- [ ] T008 Implement strict layout ergonomics in `assets/css/extended/custom.css` (enforcing reading column width 65–75 chars / `max-w-2xl` ~680px, line-height 140%–160%, minimum touch target size 44x44px, and 16px mobile input font size)
-- [ ] T009 [P] Implement code block safety rules in `assets/css/extended/custom.css` enforcing `overflow-x: auto; white-space: pre;` to prevent viewport overflow
-- [ ] T010 [P] Create credential metadata for FlyRank Certified Graduate Badge in `data/credentials.yaml`
-- [ ] T011 [P] Place FlyRank badge SVG asset in `static/images/flyrank-badge.svg`
-- [ ] T012 Create credentials partial template in `layouts/partials/credentials.html` rendering the FlyRank badge as an active link with target="_blank" and rel="noopener noreferrer" pointing to `https://flyrank.com/verify/YOUR_ID`
+- [x] T006 Configure core Hugo site settings, title, baseURL (`https://saminyasir.dev/`), theme (`PaperMod`), and profileMode in `config/_default/hugo.yaml` per `specs/001-portfolio-showcase/data-model.md`
+- [x] T007 Configure social links (GitHub, LinkedIn, Email mailto), social metadata parameters (`params.socialMeta`), Cloudflare Web Analytics token (`params.cloudflareAnalytics.token`), and Web3Forms access key in `config/_default/hugo.yaml`
+- [x] T008 Implement strict layout ergonomics in `assets/css/extended/custom.css` (enforcing reading column width 65–75 chars / `max-w-2xl` ~680px, line-height 140%–160%, minimum touch target size 44x44px, and 16px mobile input font size)
+- [x] T009 [P] Implement code block safety rules in `assets/css/extended/custom.css` enforcing `overflow-x: auto; white-space: pre;` to prevent viewport overflow
+- [x] T010 [P] Create credential metadata for FlyRank Certified Graduate Badge in `data/credentials.yaml`
+- [x] T011 [P] Place FlyRank badge SVG asset in `static/images/flyrank-badge.svg`
+- [x] T012 Create credentials partial template in `layouts/partials/credentials.html` rendering the FlyRank badge as an active link with target="_blank" and rel="noopener noreferrer" pointing to `https://flyrank.com/verify/YOUR_ID`
 
 **Checkpoint**: Core foundation and CSS layout guards complete. Content and user stories can now be implemented.
 

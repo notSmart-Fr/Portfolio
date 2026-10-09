@@ -1,0 +1,254 @@
+/* ==========================================================================
+   saminyasir.dev - Custom Design Engineering & Accessibility Styles
+   Compliant with Portfolio Constitution v1.0.0 & PaperMod Theme
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Reading Measure & Layout Constraints (Constitution Principle IV)
+   Constrains reading columns to 65–75 characters (~680px) and line height 140%-160%
+   -------------------------------------------------------------------------- */
+.main,
+.post-content,
+.profile,
+.page-content,
+.featured-section,
+.contact-section {
+  max-width: 680px !important; /* max-w-2xl measure */
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+body {
+  line-height: 1.55; /* 140% - 160% comfortable line height */
+}
+
+.post-content p,
+.profile .subtitle {
+  max-width: 680px;
+  line-height: 1.6;
+}
+
+/* --------------------------------------------------------------------------
+   2. Visual Hierarchy & Above-the-fold Typography (Constitution Principle I)
+   -------------------------------------------------------------------------- */
+/* Level 1: Title / Name (28–32px, bold, high contrast) */
+.profile h1,
+.hero-title {
+  font-size: 2rem !important; /* 32px */
+  font-weight: 700 !important;
+  line-height: 1.25 !important;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5rem !important;
+  color: var(--primary) !important;
+}
+
+/* Level 2: Role & Scope (18–20px, medium contrast) */
+.hero-role {
+  font-size: 1.25rem !important; /* 20px */
+  font-weight: 600 !important;
+  line-height: 1.4 !important;
+  margin-bottom: 0.5rem !important;
+  color: var(--primary);
+  opacity: 0.9;
+}
+
+/* Level 3: Focus Statement (15–16px, muted/secondary tone) */
+.profile .subtitle,
+.hero-focus {
+  font-size: 1rem !important; /* 16px */
+  font-weight: 400 !important;
+  line-height: 1.55 !important;
+  color: var(--secondary) !important;
+  margin-top: 0.25rem !important;
+}
+
+/* --------------------------------------------------------------------------
+   3. Touch Ergonomics & Tap Targets (Constitution Principle IV - min 44x44px)
+   -------------------------------------------------------------------------- */
+.button,
+.social-icons a,
+.nav-link,
+button,
+a.cta-btn,
+.project-card a.action-link,
+.contact-form button[type="submit"] {
+  min-height: 44px;
+  min-width: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.social-icons a {
+  padding: 10px;
+  margin: 4px;
+}
+
+/* --------------------------------------------------------------------------
+   4. Code Block Safety & Overflow Wrapping (Constitution Principle IV)
+   Prevents wide ExUnit transcripts / terminal logs from breaking page margins
+   -------------------------------------------------------------------------- */
+pre,
+pre code,
+.highlight,
+.highlight pre {
+  overflow-x: auto !important;
+  white-space: pre !important;
+  word-break: normal !important;
+  word-wrap: normal !important;
+  border-radius: 6px;
+  max-width: 100%;
+}
+
+/* --------------------------------------------------------------------------
+   5. Form Usability & Mobile Font Size Guard (Constitution Principle IV)
+   Inputs render at minimum 16px to prevent iOS Safari auto-zoom on field focus
+   -------------------------------------------------------------------------- */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea,
+input,
+textarea,
+select {
+  font-size: 16px !important; /* Prevents iOS auto-zoom */
+  line-height: 1.4;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--entry);
+  color: var(--primary);
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(var(--primary-rgb, 120, 120, 120), 0.2);
+}
+
+.contact-form button[type="submit"] {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  background: var(--primary);
+  color: var(--theme);
+  border: none;
+  border-radius: 6px;
+  padding: 0.75rem 1.5rem;
+  transition: opacity 0.2s ease;
+}
+
+.contact-form button[type="submit"]:hover {
+  opacity: 0.9;
+}
+
+.contact-fallback {
+  margin-top: 0.75rem;
+  font-size: 0.875rem;
+  text-align: center;
+  color: var(--secondary);
+}
+
+.contact-fallback a {
+  color: var(--primary);
+  text-decoration: underline;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* --------------------------------------------------------------------------
+   6. Structured Project Cards & Credentials Styling
+   -------------------------------------------------------------------------- */
+.project-card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  background: var(--entry);
+}
+
+.project-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-badge {
+  font-size: 0.75rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  background: var(--tertiary);
+  color: var(--primary);
+  font-family: monospace;
+}
+
+.project-outcome {
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+.project-highlights {
+  margin-bottom: 1.25rem;
+  padding-left: 1.25rem;
+}
+
+.project-highlights li {
+  margin-bottom: 0.5rem;
+  color: var(--secondary);
+}
+
+.project-highlights strong {
+  color: var(--primary);
+}
+
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.credentials-container {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.flyrank-badge-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  text-decoration: none;
+  color: var(--primary);
+  min-height: 44px;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.flyrank-badge-link:hover {
+  transform: translateY(-2px);
+  border-color: var(--primary);
+}
+
