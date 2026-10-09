@@ -1,0 +1,65 @@
+{{- define "main" }}
+
+{{/* ========================================================================
+     Above-the-Fold Hero Profile (Constitution Principle I & Level 1-3 Spec)
+     ======================================================================== */}}
+<section class="profile hero-section">
+    <div class="profile_inner">
+        {{- if site.Params.profileMode.imageUrl }}
+        <img draggable="false" src="{{ site.Params.profileMode.imageUrl | absURL }}" 
+             alt="{{ site.Params.profileMode.imageTitle | default "Samin Yasir" }}" 
+             title="{{ site.Params.profileMode.imageTitle | default "Samin Yasir" }}" 
+             height="120" width="120" />
+        {{- end }}
+
+        {{/* Level 1: Name / Title (28–32px bold, high contrast) */}}
+        <h1 class="hero-title">{{ site.Params.profileMode.title | default "Samin Yasir" | markdownify }}</h1>
+
+        {{/* Level 2: Role & Scope (18–20px medium contrast) */}}
+        <div class="hero-role">Backend &amp; Systems Engineer</div>
+
+        {{/* Level 3: Focus Statement (15–16px muted/secondary tone, <=75 chars) */}}
+        <p class="hero-focus">
+            Building resilient concurrent pipelines, adapter seams, and distributed event systems.
+        </p>
+
+        {{/* Social Action Channels (GitHub, LinkedIn, Email) with >=44x44px touch targets */}}
+        <div class="hero-social-actions">
+            {{- partial "social_icons.html" -}}
+        </div>
+
+        {{/* Action Buttons */}}
+        {{- with site.Params.profileMode.buttons }}
+        <div class="buttons">
+            {{- range . }}
+            <a class="button cta-btn" href="{{ trim .url " " }}" title="{{ .name }}">
+                <span class="button-inner">{{ .name }}</span>
+            </a>
+            {{- end }}
+        </div>
+        {{- end }}
+    </div>
+</section>
+
+{{/* Mount point for Featured Work (US2 / Phase 4) */}}
+{{- if templates.Exists "partials/featured-work.html" }}
+    {{- partial "featured-work.html" . }}
+{{- end }}
+
+{{/* Mount point for Engineering Logs (US2 / Phase 4) */}}
+{{- if templates.Exists "partials/engineering-logs.html" }}
+    {{- partial "engineering-logs.html" . }}
+{{- end }}
+
+{{/* Mount point for Contact Form (US3 / Phase 5) */}}
+{{- if templates.Exists "partials/contact-form.html" }}
+    {{- partial "contact-form.html" . }}
+{{- end }}
+
+{{/* Mount point for Accreditations / Credentials (FlyRank Badge) */}}
+{{- if templates.Exists "partials/credentials.html" }}
+    {{- partial "credentials.html" . }}
+{{- end }}
+
+{{- end }}
+

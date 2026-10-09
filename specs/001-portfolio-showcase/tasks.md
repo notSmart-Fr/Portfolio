@@ -43,10 +43,10 @@
 
 ### Implementation for User Story 1
 
-- [ ] T013 [US1] Create homepage root archetype/index content in `content/_index.md` with page title and metadata
-- [ ] T014 [US1] Customize hero header layout in `layouts/index.html` enforcing Level 1 ("Samin Yasir"), Level 2 ("Backend & Systems Engineer"), and Level 3 ("Building resilient concurrent pipelines, adapter seams, and distributed event systems.")
-- [ ] T015 [US1] Implement social navigation actions (GitHub, LinkedIn, direct Email) in `layouts/index.html` ensuring minimum 44x44px touch targets
-- [ ] T016 [US1] Verify that hero text measure does not exceed 75 characters per line (`max-w-2xl`) across wide screens
+- [x] T013 [US1] Create homepage root archetype/index content in `content/_index.md` with page title and metadata
+- [x] T014 [US1] Customize hero header layout in `layouts/index.html` enforcing Level 1 ("Samin Yasir"), Level 2 ("Backend & Systems Engineer"), and Level 3 ("Building resilient concurrent pipelines, adapter seams, and distributed event systems.")
+- [x] T015 [US1] Implement social navigation actions (GitHub, LinkedIn, direct Email) in `layouts/index.html` ensuring minimum 44x44px touch targets
+- [x] T016 [US1] Verify that hero text measure does not exceed 75 characters per line (`max-w-2xl`) across wide screens
 
 **Checkpoint**: User Story 1 (MVP) is fully functional and delivers an immediate 30-second technical qualification experience.
 

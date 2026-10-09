@@ -1,0 +1,25 @@
+projects:
+  - id: "social-media-studio"
+    title: "Social Media Studio"
+    timeline: "Oct 2026"
+    weight: 1
+    featured: true
+    stack:
+      - "Elixir"
+      - "Oban"
+      - "PostgreSQL"
+      - "Docker"
+      - "Telegram Bot API"
+    outcome: "An adapter-driven publishing engine with review gates and verified exactly-once delivery guarantees."
+    highlights:
+      - title: "Idempotency"
+        description: "PostgreSQL partial unique index suppressing duplicate dispatches under simulated network drops."
+      - title: "Fault Tolerance"
+        description: "Oban workers resuming mid-batch crashes with HTTP 429 snooze parsing."
+    metrics:
+      - "100% duplicate suppression under retry storms"
+      - "HTTP 429 Retry-After queue snoozing"
+    links:
+      case_study: "/projects/social-media-studio/"
+      github: "https://github.com/saminyasir/socialmedia-studio"
+      demo_video: ""
