@@ -280,3 +280,40 @@ select {
   border-color: var(--primary);
 }
 
+/* --------------------------------------------------------------------------
+   7. Heading Anchor Links (Inline Alignment & Zero Layout Shift)
+   Locks the # anchor right beside heading text on the same baseline
+   -------------------------------------------------------------------------- */
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+  display: flex !important;
+  align-items: baseline !important;
+  gap: 0.5rem !important;
+  flex-wrap: wrap !important;
+}
+
+.post-content .anchor,
+.anchor {
+  display: inline-flex !important;
+  color: var(--secondary) !important;
+  font-size: 0.85em !important;
+  opacity: 0.3 !important;
+  text-decoration: none !important;
+  transition: opacity 0.2s ease !important;
+  margin-left: 0.25rem !important;
+}
+
+.post-content h2:hover .anchor,
+.post-content h3:hover .anchor,
+.post-content h4:hover .anchor,
+.post-content h5:hover .anchor,
+.post-content h6:hover .anchor,
+h2:hover .anchor,
+h3:hover .anchor {
+  opacity: 1 !important;
+}
+
+
