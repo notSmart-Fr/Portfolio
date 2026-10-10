@@ -74,7 +74,7 @@ params:
 
   # Contact Form Integration (Web3Forms)
   web3forms:
-    access_key: "YOUR_WEB3FORMS_ACCESS_KEY"
+    access_key: "f85be330-bd56-4871-83db-dc11b4b7d7c7"
 
 menu:
   main:
