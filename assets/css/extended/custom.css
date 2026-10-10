@@ -316,4 +316,100 @@ h3:hover .anchor {
   opacity: 1 !important;
 }
 
+/* --------------------------------------------------------------------------
+   8. Mobile Ergonomics & Viewport Layout Overrides (<= 640px)
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 640px) {
+  /* 1. Header layout: Align logo and navigation elements compactly */
+  .nav,
+  .header-nav {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 0.75rem 1rem !important;
+    gap: 0.5rem !important;
+  }
+
+  /* Shorten / truncate brand title on mobile to prevent wrapping across 3 lines */
+  .logo a {
+    font-size: 1.1rem !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    max-width: 220px !important;
+    display: inline-block !important;
+  }
+
+  .logo {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+  }
+
+  /* 2. Menu links on mobile: smaller font, tight flex alignment */
+  .menu {
+    display: flex !important;
+    gap: 0.6rem !important;
+    align-items: center !important;
+    font-size: 0.8rem !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+  }
+
+  .menu a,
+  .menu a span {
+    font-size: 0.8rem !important;
+  }
+
+  /* 3. Hero section spacing */
+  .first-entry,
+  .profile,
+  .hero-section,
+  .profile_inner {
+    min-height: auto !important;
+    padding-top: 1.25rem !important;
+    padding-bottom: 1.75rem !important;
+  }
+
+  .profile_inner h1,
+  .hero-title {
+    font-size: 1.75rem !important;
+    margin-bottom: 0.35rem !important;
+  }
+
+  .hero-role {
+    font-size: 1.05rem !important;
+    margin-bottom: 0.35rem !important;
+  }
+
+  /* Focus statement measure */
+  .profile_inner .description,
+  .hero-focus {
+    font-size: 0.9rem !important;
+    line-height: 1.45 !important;
+    padding: 0 0.25rem !important;
+  }
+
+  /* 4. Action buttons: Compact row instead of bulky vertical cards */
+  .buttons,
+  .profile .buttons {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    gap: 0.5rem !important;
+    width: 100% !important;
+    margin-top: 1rem !important;
+  }
+
+  .button,
+  .cta-btn {
+    font-size: 0.8rem !important;
+    padding: 0.5rem 0.85rem !important;
+    white-space: nowrap !important;
+  }
+}
+
+
 
