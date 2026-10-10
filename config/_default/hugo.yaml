@@ -42,12 +42,10 @@ params:
     imageUrl: ""
     imageTitle: "Samin Yasir"
     buttons:
-      - name: "Featured Work"
+      - name: "View Featured Work"
         url: "#featured-work"
-      - name: "Engineering Logs"
+      - name: "Read Engineering Logs"
         url: "#engineering-logs"
-      - name: "Contact"
-        url: "#contact"
 
   # Social Icons
   socialIcons:
