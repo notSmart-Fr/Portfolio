@@ -21,6 +21,6 @@ projects:
       - "HTTP 429 Retry-After queue snoozing"
     links:
       case_study: "/projects/social-media-studio/"
-      github: "https://github.com/saminyasir/socialmedia-studio"
+      github: "https://github.com/notSmart-Fr/flyrank-capstone-social-studio"
       demo_video: ""
 
