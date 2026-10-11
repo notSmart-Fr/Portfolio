@@ -331,13 +331,13 @@ h3:hover .anchor {
     gap: 0.5rem !important;
   }
 
-  /* Shorten / truncate brand title on mobile to prevent wrapping across 3 lines */
+  /* Clean brand title on mobile without ellipsis or wrapping */
   .logo a {
-    font-size: 1.1rem !important;
+    font-size: 1.05rem !important;
+    font-weight: 700;
     white-space: nowrap !important;
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
-    max-width: 220px !important;
+    text-overflow: clip !important;
+    max-width: none !important;
     display: inline-block !important;
   }
 
